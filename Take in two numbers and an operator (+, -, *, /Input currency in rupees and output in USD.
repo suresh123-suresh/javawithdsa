@@ -1,0 +1,22 @@
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+
+        System.out.print("Enter amount in Rupees: ");
+        double rupees = input.nextDouble();
+
+        double exchangeRate = 87.0;   // 1 USD = 87 INR
+        double usd = rupees / exchangeRate;
+
+        System.out.println("Amount in USD = $" + usd);
+
+        input.close();
+    }
+}
+
+output:Enter amount in Rupees: 852
+Amount in USD = $9.793103448275861
+
+=== Code Execution Successful ===
