@@ -1,0 +1,1 @@
+import java.util.Scanner; class Calculator{void add(int a,int b){System.out.println("Addition = "+(a+b));}void sub(int a,int b){System.out.println("Subtraction = "+(a-b));}} public class CalculatorDemo{public static void main(String[]args){Scanner sc=new Scanner(System.in);Calculator c=new Calculator();int a=sc.nextInt(),b=sc.nextInt();c.add(a,b);c.sub(a,b);}}

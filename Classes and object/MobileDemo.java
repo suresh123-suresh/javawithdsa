@@ -1,0 +1,1 @@
+class Mobile{String brand="Samsung";int price=25000;void display(){System.out.println("Brand: "+brand);System.out.println("Price: "+price);}} public class MobileDemo{public static void main(String[]args){new Mobile().display();}}

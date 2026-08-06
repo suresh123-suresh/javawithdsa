@@ -1,0 +1,1 @@
+class Person{String name="Suresh";int age=20;void display(){System.out.println("Name: "+name);System.out.println("Age: "+age);}} public class PersonDemo{public static void main(String[]args){new Person().display();}}

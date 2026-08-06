@@ -1,0 +1,1 @@
+class Book{String title="Java Programming";String author="James Gosling";void display(){System.out.println("Book: "+title);System.out.println("Author: "+author);}} public class BookDemo{public static void main(String[]args){new Book().display();}}

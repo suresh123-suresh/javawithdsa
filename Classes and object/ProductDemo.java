@@ -1,0 +1,1 @@
+class Product{int id=101;String name="Laptop";double price=55000;void display(){System.out.println("ID: "+id);System.out.println("Name: "+name);System.out.println("Price: "+price);}} public class ProductDemo{public static void main(String[]args){new Product().display();}}

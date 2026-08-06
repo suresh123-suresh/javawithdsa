@@ -1,0 +1,1 @@
+class Laptop{String brand="Dell";String processor="Intel i5";void display(){System.out.println("Brand: "+brand);System.out.println("Processor: "+processor);}} public class LaptopDemo{public static void main(String[]args){new Laptop().display();}}

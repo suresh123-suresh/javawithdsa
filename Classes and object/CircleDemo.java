@@ -1,0 +1,1 @@
+import java.util.Scanner; class Circle{double r;void getRadius(double x){r=x;}void area(){System.out.println("Area = "+(3.14*r*r));}} public class CircleDemo{public static void main(String[]args){Scanner sc=new Scanner(System.in);Circle c=new Circle();c.getRadius(sc.nextDouble());c.area();}}

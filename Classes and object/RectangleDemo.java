@@ -1,0 +1,1 @@
+import java.util.Scanner; class Rectangle{int l,b;void getData(int x,int y){l=x;b=y;}void area(){System.out.println("Area = "+(l*b));}} public class RectangleDemo{public static void main(String[]args){Scanner sc=new Scanner(System.in);Rectangle r=new Rectangle();r.getData(sc.nextInt(),sc.nextInt());r.area();}}

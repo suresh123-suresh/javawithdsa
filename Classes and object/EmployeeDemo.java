@@ -1,0 +1,3 @@
+import java.util.Scanner;
+class Employee{int empId;String empName;double salary;void getData(int i,String n,double s){empId=i;empName=n;salary=s;}void display(){System.out.println("Employee ID: "+empId);System.out.println("Employee Name: "+empName);System.out.println("Salary: "+salary);}}
+public class EmployeeDemo{public static void main(String[]args){Scanner sc=new Scanner(System.in);Employee e=new Employee();int id=sc.nextInt();sc.nextLine();String name=sc.nextLine();double sal=sc.nextDouble();e.getData(id,name,sal);e.display();}}
