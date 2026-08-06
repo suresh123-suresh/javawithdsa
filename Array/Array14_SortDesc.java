@@ -1,0 +1,1 @@
+import java.util.*; public class Array14_SortDesc{public static void main(String[]a){Scanner s=new Scanner(System.in);int n=s.nextInt();Integer[]x=new Integer[n];for(int i=0;i<n;i++)x[i]=s.nextInt();Arrays.sort(x,Collections.reverseOrder());for(int v:x)System.out.print(v+" ");}}

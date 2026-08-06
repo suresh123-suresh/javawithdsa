@@ -1,0 +1,1 @@
+import java.util.*; public class Array22_Palindrome{public static void main(String[]a){int[]x={1,2,3,2,1};boolean p=true;for(int i=0;i<x.length/2;i++)if(x[i]!=x[x.length-1-i])p=false;System.out.println(p);}}

@@ -1,0 +1,1 @@
+import java.util.*; public class Array15_Copy{public static void main(String[]a){Scanner s=new Scanner(System.in);int n=s.nextInt();int[]x=new int[n],y=new int[n];for(int i=0;i<n;i++)x[i]=s.nextInt();for(int i=0;i<n;i++)y[i]=x[i];for(int v:y)System.out.print(v+" ");}}

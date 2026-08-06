@@ -1,0 +1,1 @@
+import java.util.*; public class Array16_Merge{public static void main(String[]a){int[]a1={1,2,3};int[]a2={4,5,6};for(int v:a1)System.out.print(v+" ");for(int v:a2)System.out.print(v+" ");}}

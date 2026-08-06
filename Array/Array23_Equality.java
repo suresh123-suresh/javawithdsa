@@ -1,0 +1,1 @@
+import java.util.*; public class Array23_Equality{public static void main(String[]a){int[]a1={1,2,3};int[]a2={1,2,3};System.out.println(Arrays.equals(a1,a2));}}

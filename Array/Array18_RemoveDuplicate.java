@@ -1,0 +1,1 @@
+import java.util.*; public class Array18_RemoveDuplicate{public static void main(String[]a){int[]x={1,2,2,3,4,4};LinkedHashSet<Integer>h=new LinkedHashSet<>();for(int v:x)h.add(v);System.out.println(h);}}

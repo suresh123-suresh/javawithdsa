@@ -1,0 +1,1 @@
+import java.util.*; public class Array3_Average{public static void main(String[]a){Scanner sc=new Scanner(System.in);int n=sc.nextInt(),s=0;int[] arr=new int[n];for(int i=0;i<n;i++){arr[i]=sc.nextInt();s+=arr[i];}System.out.println((double)s/n);}}

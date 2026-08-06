@@ -1,0 +1,1 @@
+import java.util.*; public class Array8_Even{public static void main(String[]a){Scanner s=new Scanner(System.in);int n=s.nextInt();for(int i=0;i<n;i++){int v=s.nextInt();if(v%2==0)System.out.print(v+" ");}}}

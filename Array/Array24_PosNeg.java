@@ -1,0 +1,1 @@
+import java.util.*; public class Array24_PosNeg{public static void main(String[]a){int[]x={-1,2,-3,4};for(int v:x)if(v>0)System.out.print(v+" ");System.out.println();for(int v:x)if(v<0)System.out.print(v+" ");}}

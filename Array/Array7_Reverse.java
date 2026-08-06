@@ -1,0 +1,1 @@
+import java.util.*; public class Array7_Reverse{public static void main(String[]a){Scanner s=new Scanner(System.in);int n=s.nextInt();int[]x=new int[n];for(int i=0;i<n;i++)x[i]=s.nextInt();for(int i=n-1;i>=0;i--)System.out.print(x[i]+" ");}}

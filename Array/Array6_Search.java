@@ -1,0 +1,1 @@
+import java.util.*; public class Array6_Search{public static void main(String[]a){Scanner s=new Scanner(System.in);int n=s.nextInt();int[]x=new int[n];for(int i=0;i<n;i++)x[i]=s.nextInt();int k=s.nextInt();boolean f=false;for(int v:x)if(v==k)f=true;System.out.println(f?"Found":"Not Found");}}

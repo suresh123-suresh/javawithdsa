@@ -1,0 +1,1 @@
+public class Array21_RightRotate{public static void main(String[]a){int[]x={1,2,3,4,5};int l=x[x.length-1];for(int i=x.length-1;i>0;i--)x[i]=x[i-1];x[0]=l;for(int v:x)System.out.print(v+" ");}}

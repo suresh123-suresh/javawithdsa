@@ -1,0 +1,1 @@
+import java.util.*; public class Array25_Insert{public static void main(String[]a){int[]x={1,2,4,5};int[]y=new int[5];int pos=2,val=3;for(int i=0,j=0;i<y.length;i++){if(i==pos)y[i]=val;else y[i]=x[j++];}for(int v:y)System.out.print(v+" ");}}

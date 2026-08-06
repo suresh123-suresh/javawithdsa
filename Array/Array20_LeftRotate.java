@@ -1,0 +1,1 @@
+public class Array20_LeftRotate{public static void main(String[]a){int[]x={1,2,3,4,5};int f=x[0];for(int i=0;i<x.length-1;i++)x[i]=x[i+1];x[x.length-1]=f;for(int v:x)System.out.print(v+" ");}}

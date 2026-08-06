@@ -1,0 +1,1 @@
+import java.util.*; public class Array10_CountEvenOdd{public static void main(String[]a){Scanner s=new Scanner(System.in);int n=s.nextInt(),e=0,o=0;for(int i=0;i<n;i++){int v=s.nextInt();if(v%2==0)e++;else o++;}System.out.println("Even="+e+" Odd="+o);}}

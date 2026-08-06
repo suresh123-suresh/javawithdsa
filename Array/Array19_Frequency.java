@@ -1,0 +1,1 @@
+import java.util.*; public class Array19_Frequency{public static void main(String[]a){int[]x={1,2,2,3};boolean[]v=new boolean[x.length];for(int i=0;i<x.length;i++){if(v[i])continue;int c=1;for(int j=i+1;j<x.length;j++)if(x[i]==x[j]){c++;v[j]=true;}System.out.println(x[i]+":"+c);}}}
