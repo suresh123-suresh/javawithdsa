@@ -1,0 +1,43 @@
+import java.util.*;
+
+public class DataStructureOperations {
+    public static void main(String[] args) {
+        // Initial ArrayList
+        List<Integer> list = new ArrayList<>(Arrays.asList(10, 20, 30, 40));
+        System.out.println("Initial List: " + list);
+
+        // 1. INSERTION
+        list.add(50);  // add new element
+        System.out.println("After Insertion: " + list);
+
+        // 2. DELETION
+        list.remove(Integer.valueOf(20));  // remove element 20
+        System.out.println("After Deletion: " + list);
+
+        // 3. TRAVERSAL
+        System.out.print("Traversal: ");
+        for (int num : list) {
+            System.out.print(num + " ");
+        }
+        System.out.println();
+
+        // 4. SEARCHING
+        int searchElement = 30;
+        if (list.contains(searchElement)) {
+            System.out.println("Search: " + searchElement + " found!");
+        } else {
+            System.out.println("Search: " + searchElement + " not found!");
+        }
+
+        // 5. SORTING
+        Collections.sort(list);  // ascending order
+        System.out.println("After Sorting: " + list);
+
+        // 6. UPDATING
+        int indexToUpdate = list.indexOf(30); // find index of 30
+        if (indexToUpdate != -1) {
+            list.set(indexToUpdate, 35);  // update 30 → 35
+        }
+        System.out.println("After Updating: " + list);
+    }
+}
