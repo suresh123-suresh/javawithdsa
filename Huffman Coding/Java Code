@@ -1,0 +1,62 @@
+import java.util.*;
+
+class HuffmanNode {
+    int freq;
+    char ch;
+    HuffmanNode left, right;
+}
+
+class HuffmanCoding {
+    public static void printCodes(HuffmanNode root, String code) {
+        if (root == null) return;
+
+        // Leaf node → print character and code
+        if (root.left == null && root.right == null && Character.isLetter(root.ch)) {
+            System.out.println(root.ch + " : " + code);
+            return;
+        }
+
+        printCodes(root.left, code + "0");
+        printCodes(root.right, code + "1");
+    }
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter characters:");
+        String input = sc.nextLine();
+
+        // Frequency map
+        Map<Character, Integer> freqMap = new HashMap<>();
+        for (char c : input.toCharArray()) {
+            freqMap.put(c, freqMap.getOrDefault(c, 0) + 1);
+        }
+
+        // Min-heap
+        PriorityQueue<HuffmanNode> pq = new PriorityQueue<>(Comparator.comparingInt(a -> a.freq));
+
+        for (Map.Entry<Character, Integer> entry : freqMap.entrySet()) {
+            HuffmanNode node = new HuffmanNode();
+            node.ch = entry.getKey();
+            node.freq = entry.getValue();
+            pq.add(node);
+        }
+
+        // Build Huffman Tree
+        while (pq.size() > 1) {
+            HuffmanNode x = pq.poll();
+            HuffmanNode y = pq.poll();
+
+            HuffmanNode newNode = new HuffmanNode();
+            newNode.freq = x.freq + y.freq;
+            newNode.ch = '-';
+            newNode.left = x;
+            newNode.right = y;
+
+            pq.add(newNode);
+        }
+
+        HuffmanNode root = pq.peek();
+        System.out.println("Huffman Codes:");
+        printCodes(root, "");
+    }
+}
