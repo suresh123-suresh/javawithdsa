@@ -1,0 +1,49 @@
+import java.util.*;
+
+class SqrtDecomposition {
+    static int[] arr;
+    static int[] block;
+    static int blockSize;
+
+    // Preprocessing
+    static void preprocess(int n) {
+        blockSize = (int)Math.sqrt(n);
+        block = new int[(n + blockSize - 1) / blockSize];
+
+        for (int i = 0; i < n; i++) {
+            block[i / blockSize] += arr[i];
+        }
+    }
+
+    // Query sum from L to R
+    static int query(int L, int R) {
+        int sum = 0;
+        while (L <= R) {
+            if (L % blockSize == 0 && L + blockSize - 1 <= R) {
+                sum += block[L / blockSize];
+                L += blockSize;
+            } else {
+                sum += arr[L];
+                L++;
+            }
+        }
+        return sum;
+    }
+
+    // Update element
+    static void update(int idx, int val) {
+        block[idx / blockSize] += (val - arr[idx]);
+        arr[idx] = val;
+    }
+
+    public static void main(String[] args) {
+        arr = new int[]{1, 2, 3, 4, 5, 6, 7, 8, 9};
+        int n = arr.length;
+
+        preprocess(n);
+
+        System.out.println("Sum [0, 4] = " + query(0, 4));
+        update(3, 10); // arr[3] = 10
+        System.out.println("Sum [0, 4] after update = " + query(0, 4));
+    }
+}
